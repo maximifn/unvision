@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,14 +10,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ STATIC_URL }}assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.png' %}">
     <title>Vision | Ошибка 404</title>
     <!-- Bootstrap Core CSS -->
-    <link href="{{ STATIC_URL }}assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <!-- You can change the theme colors from here -->
-    <link href="{{ STATIC_URL }}css/colors/red.css" id="theme" rel="stylesheet">
+    <link href="{% static 'css/colors/red.css' %}" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,13 +46,13 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="{{ STATIC_URL }}assets/plugins/jquery/jquery.min.js"></script>
+    <script src="{% static 'assets/plugins/jquery/jquery.min.js' %}"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="{{ STATIC_URL }}assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="{% static 'assets/plugins/bootstrap/js/popper.min.js' %}"></script>
 
-    <script src="{{ STATIC_URL }}assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
     <!--Wave Effects -->
-    <script src=".{{ STATIC_URL }}js/waves.js"></script>
+    <script src=".{% static 'js/waves.js' %}"></script>
 </body>
 
 </html>
